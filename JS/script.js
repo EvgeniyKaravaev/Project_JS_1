@@ -34,7 +34,7 @@ function rememberMyMovies () {
 
     for (let i = 0; i < 2; i ++) {
     
-        const oneQuestion = prompt('Введите один из последних просмотренных фильмов?',''),
+        const oneQuestion = prompt('Введите один из последних просмотренных фильмов?','').trim(),
         
         twoQuestion = +prompt('Какую оценку поставите фильму?','');
     
