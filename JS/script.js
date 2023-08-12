@@ -17,17 +17,17 @@ const personalMovie = {
 
 };
 
-const one = prompt('Введите один из последних просмотренных фильмов?',''),
+const oneQuestion = prompt('Введите один из последних просмотренных фильмов?',''),
     
-      two = +prompt('Какую оценку поставите фильму?',''),
+      twoQuestion = +prompt('Какую оценку поставите фильму?',''),
 
-      tree = prompt('Введите один из последних просмотренных фильмов?',''),
+      treeQuestion = prompt('Введите один из последних просмотренных фильмов?',''),
 
-      four = +prompt('Какую оценку поставите фильму?','');
+      fourQuestion = +prompt('Какую оценку поставите фильму?','');
 
-      personalMovie.movies[one] = two;
+      personalMovie.movies[oneQuestion] = twoQuestion;
 
-      personalMovie.movies[tree] = four;
+      personalMovie.movies[treeQuestion] = fourQuestion;
 
       console.log(personalMovie);
 
