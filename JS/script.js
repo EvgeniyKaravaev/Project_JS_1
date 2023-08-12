@@ -17,17 +17,25 @@ const personalMovie = {
 
 };
 
-const oneQuestion = prompt('Введите один из последних просмотренных фильмов?',''),
+for(let i = 0; i < 2; i ++){
     
-      twoQuestion = +prompt('Какую оценку поставите фильму?',''),
+    const oneQuestion = prompt('Введите один из последних просмотренных фильмов?',''),
+    
+    twoQuestion = +prompt('Какую оценку поставите фильму?','');
 
-      treeQuestion = prompt('Введите один из последних просмотренных фильмов?',''),
+    if (oneQuestion != null && twoQuestion != null && oneQuestion != '' && twoQuestion != '' && oneQuestion.length < 30){
+        
+        personalMovie.movies[oneQuestion] = twoQuestion;
 
-      fourQuestion = +prompt('Какую оценку поставите фильму?','');
+    } else {
 
-      personalMovie.movies[oneQuestion] = twoQuestion;
+        console.log('Ошибка ввода данных!');
 
-      personalMovie.movies[treeQuestion] = fourQuestion;
+        i --;
+        
+    }
 
-      console.log(personalMovie);
+}
+
+console.log(personalMovie);
 
